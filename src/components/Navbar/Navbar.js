@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import Resume from "../../assets/other/Resume_Tehranchi.pdf"
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -34,8 +35,18 @@ const ResponsiveAppBar = ({pageState,setPageState}) => {
     setAnchorElUser(null);
   };
 
+  const handleOpenAbout = () => {
+      setPageState({...pageState,about:true,work:false,contact:false});
+  }
+  const handleOpenWork = () => {
+    setPageState({...pageState,about:false,work:true,contact:false});
+}
+const handleOpenContact = () => {
+    setPageState({...pageState,about:false,work:false,contact:true});
+}
+
   return (
-    <AppBar position="static" sx={{ bgcolor: "" }}>
+    <AppBar position="static" sx={{ bgcolor: {background: "#C8AD55"} }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -77,16 +88,16 @@ const ResponsiveAppBar = ({pageState,setPageState}) => {
               }}
             >
             
-                <MenuItem onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleOpenAbout}>
                   <Typography textAlign="center">About</Typography>
                 </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleOpenWork}>
                   <Typography textAlign="center">Work</Typography>
                 </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleOpenContact}>
                   <Typography textAlign="center">Contact</Typography>
                 </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
+                <MenuItem component={"a"} href={Resume} onClick={handleCloseNavMenu} target="_blank">
                   <Typography textAlign="center">Resume</Typography>
                 </MenuItem>
        
@@ -104,27 +115,28 @@ const ResponsiveAppBar = ({pageState,setPageState}) => {
             
               <Button
                 
-                onClick={handleCloseNavMenu}
+                onClick={handleOpenAbout}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 About
               </Button>
               <Button
                 
-                onClick={handleCloseNavMenu}
+                onClick={handleOpenWork}
                 sx={{ my: 2, color: "white", display: 'block' }}
               >
                 Work
               </Button>
               <Button
                 
-                onClick={handleCloseNavMenu}
+                onClick={handleOpenContact}
                 sx={{ my: 2, color: "white", display: 'block' }}
               >
                 Contact
               </Button>
               <Button
-                
+                href={Resume}
+                target="_blank"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
