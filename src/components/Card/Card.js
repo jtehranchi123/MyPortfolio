@@ -37,25 +37,18 @@ const RecipeReviewCard = ({github,image,title,heroku,description}) => {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title={title}
-        subheader="September 14, 2016"
+      <CardHeader   
+        title={
+        <Typography gutterBottom variant="h5" component="div">
+        {title}
+        </Typography>
+        }    
       />
       <CardMedia
         component="img"
         height="194"
         image={image}
-        alt="Paella dish"
+        alt="Project"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
