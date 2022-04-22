@@ -19,7 +19,7 @@ const About = () => {
 
             <Grid item xs={12} md={3} className="about"> 
             <h1>Jordan Tehranchi</h1>
-            <h2>Software Engineer</h2>
+            <h2>Full-Stack Software Engineer</h2>
             <p>Full-Stack Software Engineer, Front-End Developer, Software Consultant, and Entrepeneur with 3+ years of technical work experience </p>
             </Grid>
         </Grid>
