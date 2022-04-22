@@ -92,7 +92,7 @@ const handleOpenContact = () => {
                   <Typography textAlign="center">About</Typography>
                 </MenuItem>
                 <MenuItem onClick={handleOpenWork}>
-                  <Typography textAlign="center">Work</Typography>
+                  <Typography textAlign="center">Projects</Typography>
                 </MenuItem>
                 <MenuItem onClick={handleOpenContact}>
                   <Typography textAlign="center">Contact</Typography>
@@ -125,7 +125,7 @@ const handleOpenContact = () => {
                 onClick={handleOpenWork}
                 sx={{ my: 2, color: "white", display: 'block' }}
               >
-                Work
+                Projects
               </Button>
               <Button
                 
@@ -144,8 +144,8 @@ const handleOpenContact = () => {
               </Button>
             
           </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
+          {/* TODO: Implement Login System */}
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -173,7 +173,7 @@ const handleOpenContact = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

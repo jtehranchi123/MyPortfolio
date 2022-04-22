@@ -4,8 +4,10 @@ import Input from '@mui/material/Input';
 import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormControl';
 import InputLabel from '@mui/material/FormControl';
+import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import backgroundPic from "../../assets/pics/road-ahead-lXfNil-rWFw-unsplash.jpg"
 
 const Contact = () => {
     const [formState,setFormState] = useState({
@@ -68,9 +70,10 @@ const Contact = () => {
 
   return (
     <>
+        <Box minHeight="85vh" style={{backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:'no-repeat',backgroundImage: "url(" + backgroundPic + ")"}}>
         <Grid container justifyContent="center">
             <Grid item>
-                <h1>Contact </h1>
+                <h1>Contact Me</h1>
             </Grid>
         </Grid>
         <Grid container justifyContent="center" spacing={3} padding={2}>
@@ -111,6 +114,7 @@ const Contact = () => {
             {formState.invalidEmail ?
             <p> email is invalid! </p> : ''}
         </Grid>
+        </Box>
     </>
   )
 }

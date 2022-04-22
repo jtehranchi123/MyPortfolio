@@ -1,7 +1,8 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 import Card from "../Card"
-
+import backgroundPic from "../../assets/pics/road-ahead-yunA0Ko3FHc-unsplash.jpg"
 const Work = () => {
   let projects = [
     {
@@ -51,8 +52,9 @@ const Work = () => {
 
   return (
     <>
+        <Box minHeight="85vh" padding={2} style={{backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:'no-repeat',backgroundImage: "url(" + backgroundPic + ")"}}>
         <Grid container justifyContent="center">
-            <h1> My Work</h1>
+            <h1> My Projects</h1>
         </Grid>
         <Grid container spacing={4} padding={2} justifyContent="center">
             {projects.map(project => 
@@ -61,6 +63,7 @@ const Work = () => {
                 </Grid>
             )}
         </Grid>
+        </Box>
     </>
   )
 }
