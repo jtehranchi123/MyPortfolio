@@ -7,8 +7,8 @@ import InputLabel from '@mui/material/FormControl';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import backgroundPic from "../../assets/pics/road-ahead-lXfNil-rWFw-unsplash.jpg"
-
+import backgroundPic from "../../assets/pics/wolfgang-hasselmann-xcEgnET1zHM-unsplash.jpg"
+import "./contact.css"
 const Contact = () => {
     const [formState,setFormState] = useState({
         name: '',
@@ -71,7 +71,7 @@ const Contact = () => {
   return (
     <>
         <Box minHeight="85vh" style={{backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:'no-repeat',backgroundImage: "url(" + backgroundPic + ")"}}>
-        <Grid container justifyContent="center">
+        <Grid className = "contact" container justifyContent="center">
             <Grid item>
                 <h1>Contact Me</h1>
             </Grid>
