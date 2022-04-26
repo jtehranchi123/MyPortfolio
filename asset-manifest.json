@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.74d3a919.css",
-    "main.js": "/MyPortfolio/static/js/main.8a81d429.js",
+    "main.js": "/MyPortfolio/static/js/main.40bf36ff.js",
     "static/media/road-ahead-yunA0Ko3FHc-unsplash.jpg": "/MyPortfolio/static/media/road-ahead-yunA0Ko3FHc-unsplash.579adf3be5af36b74087.jpg",
     "static/media/bernd-dittrich-MAUO2zOa8O4-unsplash.jpg": "/MyPortfolio/static/media/bernd-dittrich-MAUO2zOa8O4-unsplash.ae1edddbee571c573bc6.jpg",
     "static/media/wolfgang-hasselmann-xcEgnET1zHM-unsplash.jpg": "/MyPortfolio/static/media/wolfgang-hasselmann-xcEgnET1zHM-unsplash.e6c7d0db5be9367b6c68.jpg",
@@ -9,10 +9,10 @@
     "static/media/Resume_Tehranchi.pdf": "/MyPortfolio/static/media/Resume_Tehranchi.36bc371ae213d520276d.pdf",
     "index.html": "/MyPortfolio/index.html",
     "main.74d3a919.css.map": "/MyPortfolio/static/css/main.74d3a919.css.map",
-    "main.8a81d429.js.map": "/MyPortfolio/static/js/main.8a81d429.js.map"
+    "main.40bf36ff.js.map": "/MyPortfolio/static/js/main.40bf36ff.js.map"
   },
   "entrypoints": [
     "static/css/main.74d3a919.css",
-    "static/js/main.8a81d429.js"
+    "static/js/main.40bf36ff.js"
   ]
 }
