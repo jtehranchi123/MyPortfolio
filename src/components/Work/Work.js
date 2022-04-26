@@ -15,8 +15,8 @@ const Work = () => {
     },
     {
         title: "Note-Taker App",
-        github: "https://github.com/",
-        heroku: "https://dashboard.heroku.com/",
+        github: "https://github.com/jtehranchi123/noteTakingApp",
+        heroku: "https://note-taker-app-jtehranchi.herokuapp.com/",
         image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         description: "Coming soon...lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
     },
